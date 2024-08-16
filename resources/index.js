@@ -34,7 +34,7 @@ const myDoughnutChart = new Chart(ctx, {
   },
 });
 
-// Code for dropdown
+// Code for dropdown in sidebar
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -53,11 +53,12 @@ window.onclick = function (event) {
   }
 };
 
+// second dropdown 
 function myFunction2() {
   document.getElementById("myDropdown2").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
+// Close the dropdown if the user clicks outside of dropdown2
 window.onclick = function (event) {
   if (!event.target.matches(".dropbtn")) {
     var dropdowns = document.getElementsByClassName("dropdown-content2");
@@ -71,6 +72,7 @@ window.onclick = function (event) {
   }
 };
 
+// js code of expanding table col
 document.addEventListener("DOMContentLoaded", function () {
   const toggleButtons = document.getElementsByClassName("expand_more");
   Array.from(toggleButtons).forEach((toggleButton, index) => {
@@ -87,7 +89,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // SIDEBAR OPEN AND CLOSING
-
 document.addEventListener("DOMContentLoaded", function () {
   const toggleButton = document.getElementById("closedSidebarIcon");
 

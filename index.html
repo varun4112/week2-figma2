@@ -13,31 +13,32 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
+
+  <!-- body  -->
   <body>
     <main>
       <!-- Sidebar -->
       <div id="sideBar">
-        <div>
-          <div id="Edash">
-            <div id="grainEdash">
-              <img
-                id="grainImg"
-                src="./resources/assets/grain.svg"
-                alt=""
-              />E-Dashboard
-            </div>
+        <div id="Edash">
+          <div id="grainEdash">
             <img
-              id="openSidebarIcon"
-              src="./resources/assets/menu_open.svg"
+              id="grainImg"
+              src="./resources/assets/grain.svg"
               alt=""
-            />
-            <img
-              id="closedSidebarIcon"
-              src="./resources/assets/Group 1000005387closedISdebar.svg"
-              alt=""
-            />
+            />E-Dashboard
           </div>
-
+          <img
+            id="openSidebarIcon"
+            src="./resources/assets/menu_open.svg"
+            alt=""
+          />
+          <img
+            id="closedSidebarIcon"
+            src="./resources/assets/Group 1000005387closedISdebar.svg"
+            alt=""
+          />
+        </div>
+        <div id="bar">
           <div id="menuList">
             <div id="clientCompany">
               <div id="avtar">A</div>
@@ -117,34 +118,32 @@
             </div>
           </div>
 
-          <div id="loginLogout">
-            <div id="sidebarBottomOptions">
-              <div id="sidebarBottomItem">
-                <div id="sidebarBottomItemIcon">
-                  <img src="./resources/assets/notifications.svg" alt="" />
-                </div>
-                <div id="sidebarBottomItemText">Notification</div>
+          <div id="sidebarBottomOptions">
+            <div id="sidebarBottomItem">
+              <div id="sidebarBottomItemIcon">
+                <img src="./resources/assets/notifications.svg" alt="" />
               </div>
+              <div id="sidebarBottomItemText">Notification</div>
+            </div>
 
-              <div id="sidebarBottomItem">
-                <div id="sidebarBottomItemIcon">
-                  <img src="./resources/assets/help.svg" alt="" />
-                </div>
-                <div id="sidebarBottomItemText">help Center</div>
-                <div id="dotMenu">
-                  <img src="./resources/assets/expand_more2.svg" alt="" />
-                </div>
+            <div id="sidebarBottomItem">
+              <div id="sidebarBottomItemIcon">
+                <img src="./resources/assets/help.svg" alt="" />
               </div>
+              <div id="sidebarBottomItemText">help Center</div>
+              <div id="dotMenu">
+                <img src="./resources/assets/expand_more2.svg" alt="" />
+              </div>
+            </div>
 
-              <div id="userItem">
-                <div id="userAvtar">J</div>
-                <div id="userInfo">
-                  <div id="userName">Jacobe James</div>
-                  <div id="userEmail">Jacobejames@gmail.com</div>
-                </div>
-                <div id="expand">
-                  <img src="./resources/assets/expand_more2.svg" alt="" />
-                </div>
+            <div id="userItem">
+              <div id="userAvtar">J</div>
+              <div id="userInfo">
+                <div id="userName">Jacobe James</div>
+                <div id="userEmail">Jacobejames@gmail.com</div>
+              </div>
+              <div id="expand">
+                <img src="./resources/assets/expand_more2.svg" alt="" />
               </div>
             </div>
           </div>
@@ -164,6 +163,7 @@
           <p id="welcomeBack">Welcome back!</p>
         </div>
 
+        <!-- document status -->
         <div class="document-status-container">
           <img
             src="./resources/assets/Group 764326card-check.svg"
@@ -195,7 +195,7 @@
         <div id="chartContainer">
           <div id="chartBox">
             <canvas id="myDoughnutChart"></canvas>
-            <h2 >21</h2>
+            <h2>21</h2>
             <p>Applications</p>
           </div>
           <div id="chartLegend">
@@ -346,6 +346,7 @@
             <h1 id="transactionHeading">Payment history</h1>
             <a>View All</a>
           </div>
+          <!-- table starts -->
           <table id="paymentTable">
             <tr id="transactionHeading">
               <th>Transaction Id</th>

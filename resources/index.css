@@ -17,7 +17,6 @@ main {
     width: 293px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 #closedSidebarIcon {
@@ -155,6 +154,8 @@ main {
 
 #sidebarBottomOptions {
     padding: 29px 40px 40px 29px;
+    position: fixed;
+    bottom: 0;
 
 }
 
