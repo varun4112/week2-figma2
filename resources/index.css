@@ -1,0 +1,733 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* SIDEBAR STYLING */
+#sideBar {
+    background-color: #0F1738;
+    width: 293px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#closedSidebarIcon {
+    display: none;
+}
+
+#Edash {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 24px 24px 0px 32px;
+}
+
+#grainEdash {
+    display: flex;
+    align-items: center;
+}
+
+#grainImg {
+    margin-right: 12.65px;
+}
+
+#clientCompany {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin: 16px 44px 0 20px;
+    padding: 12px;
+}
+
+#avtar {
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D36A80;
+    border-radius: 25px;
+}
+
+#name {
+    margin: 8px;
+}
+
+#MenuItem {
+    display: flex;
+    align-items: center;
+    width: 229px;
+    height: 44px;
+    margin: 10px 45px 10px 19px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#MenuItem:hover {
+    background-color: hsla(0, 0%, 100%, 0.1);
+}
+
+#menuIcon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menuText {
+    margin: 8px 4px;
+    color: #FFFFFF;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#dropdownArrow {
+    margin-left: 10px;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: transparent;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content,
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+
+#loginLogout {
+    position: sticky;
+    bottom: 0;
+    background-color: #0F1738;
+}
+
+#sidebarBottomOptions {
+    padding: 29px 40px 40px 29px;
+
+}
+
+#sidebarBottomItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#sidebarBottomItemText {
+    color: #FFFFFF;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+}
+
+#userItem {
+    display: flex;
+}
+
+#userAvtar {
+    height: 36px;
+    width: 36px;
+    background-color: hsla(347, 54%, 62%, 1);
+    color: white;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+#userInfo {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+#userEmail {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-right: 15px;
+}
+
+#expand {
+    display: flex;
+    align-items: center;
+}
+
+/* WELCOME STYLING */
+
+#Welcome {
+    width: 423px;
+    background-color: #F8F9FF;
+    border: 1px solid #C9CEE9;
+}
+
+#goodMorning {
+    margin: 40px 40px 0px 40px;
+
+}
+
+#goodMOrningText {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 28.6px;
+    text-align: left;
+}
+
+#goodMOrningText span {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 28.6px;
+    text-align: left;
+}
+
+#imgSpan {
+    margin-left: 20px;
+}
+
+#welcomeBack {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.8px;
+    text-align: left;
+    color: #6A6A6D;
+}
+
+
+
+.document-status-container {
+    position: relative;
+    margin: 40px 40px 0px 40px;
+    width: 343px;
+    height: 182px;
+    background-image: linear-gradient(to right, rgba(123, 146, 248, 1), rgba(255, 147, 147, 1));
+    border-radius: 16px;
+    padding: 24px;
+}
+
+#documnetStatusDiv1 {
+    display: flex;
+    margin-left: 100px;
+}
+
+#documnetStatusDiv1 h2 {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18.2px;
+}
+
+.documents-span1 {
+    font-weight: 500;
+}
+
+.documents-span2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+#documentStatusPara {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    width: 219px;
+}
+
+.documents-span3 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.2px;
+    text-align: left;
+}
+
+#next-button {
+    position: absolute;
+    bottom: 32px;
+    right: 23px;
+}
+
+
+/* #stars {
+    height: 31px;
+    width: 31px;
+    position: relative;
+    top: 0;
+    right: 0;
+} */
+
+
+.horizontal-line {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 24px 0px;
+}
+
+
+.card-checked {
+    position: absolute;
+    top: -1.18rem;
+    left: 0.937rem;
+}
+
+#chartContainer {
+    width: 343px;
+    height: 173px;
+    border-radius: 16px;
+    background-image: linear-gradient(105.84deg, #263A8B -1.73%, #1A213F 120.63%);
+    margin: 32px 40px;
+    padding: 12px 15px;
+    display: flex;
+}
+
+#chartBox {
+    width: 143px;
+    height: 149px;
+    padding: 10px;
+}
+
+#chartLegend {
+    margin-top: 39px;
+}
+
+#chartLegend ul {
+    list-style: none;
+}
+
+#chartLegend ul li {
+    margin-bottom: 16px;
+    margin-left: 29px;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 13px;
+}
+
+#chartBox h2 {
+    position: relative;
+    top: -75px;
+    left: 0px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+
+}
+
+#chartBox p {
+    position: relative;
+    top: -70px;
+    left: 0px;
+    color: white;
+    font-family: Inter;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 11px;
+    text-align: center;
+
+}
+
+
+#bullet1 {
+    height: 10px;
+    width: 10px;
+    margin-right: 8px;
+}
+
+/* Mailbox */
+#mailbox,
+#Legal {
+    margin: 45px 22px 0 40px;
+}
+
+#mailboxDiv1,
+#LegalDiv1 {
+    display: flex;
+}
+
+#mailboHeading,
+#LegalHeading {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-right: 12px;
+}
+
+
+#mailboxPara,
+#LegalPara {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-top: 6px;
+    margin-bottom: 32px;
+}
+
+#quickView,
+#LegalquickView {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quickView2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.quickViewp {
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgba(106, 106, 109, 1);
+}
+
+#Legal {
+    margin-bottom: 62px;
+}
+
+/* Task and payments */
+
+#taskandPayments {
+    margin: 40px;
+    width: 700px;
+}
+
+#taskHeadingDiv,
+#TransactionHeadingDiv {
+    display: flex;
+    align-items: center;
+
+}
+
+#taskHeading,
+#transactionHeading {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-right: 12px;
+}
+
+#taskHeadingDiv a,
+#TransactionHeadingDiv a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.6px;
+    text-decoration: underline;
+    color: #515BAE;
+}
+
+#TransactionHeadingDiv {
+    margin-top: 40px;
+}
+
+#taskTabs {
+    margin-top: 20px;
+    display: flex;
+    list-style: none;
+}
+
+#taskTabs li {
+    margin-right: 24px;
+    padding-bottom: 6px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 18.2px;
+    text-align: left;
+    color: #6A6A6D;
+}
+
+#taskTabs li:hover {
+    color: black;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+
+}
+
+.h-line {
+    height: 1px;
+    background-color: #DFE2F2;
+}
+
+table {
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #e5e9ff;
+    border-radius: 8px;
+    border-collapse: collapse;
+}
+
+th {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15.6px;
+    text-align: left;
+    padding: 16px 20px;
+    background-color: #F8F9FC;
+
+}
+
+td {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    text-align: left;
+    padding: 16px 20px;
+    border-bottom: 1px solid #E5E9FF
+}
+
+#tasktd {
+    width: 190px;
+}
+
+
+#tableHLine {
+    height: 1px;
+    background-color: black;
+    border: 1px solid black
+}
+
+#status {
+    text-align: center;
+    padding: 4px 12px;
+    background-color: #F1F1F5;
+    border-radius: 24px;
+    border: 1px solid #CECED1;
+}
+
+
+@media(max-width:786px) {
+    #sideBar {
+        width: 100%;
+        min-height: 80px;
+    }
+
+    #closedSidebarIcon {
+        display: block;
+    }
+
+    #openSidebarIcon {
+        display: none;
+    }
+
+    #openSidebarIcon.active {
+        display: block;
+    }
+
+    #menuList {
+        display: none;
+    }
+
+    #menuList.active {
+        display: block;
+    }
+
+    #loginLogout {
+        display: none;
+    }
+
+    #Welcome {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .document-status-container {
+        position: relative;
+        margin: 40px 40px 0px 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #chartContainer {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #taskandPayments {
+        margin: 32px 16px;
+    }
+
+    #taskHeadingDiv {
+        justify-content: space-between;
+    }
+
+    table {
+        border: none;
+    }
+
+    #taskTable tr:not(#taskhead) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        border-bottom: 1px solid #E5E9FF;
+        margin-top: 32px;
+        padding-bottom: 16px;
+    }
+
+    th,
+    #PayementTableHeading {
+        display: none;
+    }
+
+    #tasktd {
+        width: 80%;
+        font-weight: 600;
+        border-bottom: none;
+        padding: 0;
+        padding-bottom: 16px;
+    }
+
+    #taskTable td:not(#tasktd) {
+        display: flex;
+        flex-direction: column;
+        width: 163px;
+        font-weight: 500;
+        padding: 0;
+        padding-bottom: 16px;
+        color: rgba(30, 31, 33, 1);
+        border-bottom: none
+    }
+
+    #taskTable td:nth-of-type(2)::before {
+        content: 'Category';
+        font-weight: 400;
+        color: rgba(106, 106, 109, 1);
+    }
+
+    #taskTable td:nth-of-type(3)::before {
+        content: 'Due date';
+        font-weight: 400;
+        color: rgba(106, 106, 109, 1);
+    }
+
+    #taskTable td:nth-of-type(4)::before {
+        content: 'Status';
+        font-weight: 400;
+        color: rgba(106, 106, 109, 1);
+    }
+
+    #TransactionHeadingDiv {
+        justify-content: space-between;
+        margin-bottom: 32px;
+    }
+
+    /* Payment Table */
+    #paymentTable tr:not(#transactionHeading) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+        height: auto;
+        margin-bottom: 32px;
+        padding-bottom: 32px;
+        border-bottom: 1px solid #E5E9FF;
+    }
+
+    #paymentTable td {
+        width: max-content;
+        border: none;
+        padding: 0;
+    }
+
+    #paymentTable td:nth-child(1) {
+        order: 1;
+        font-size: 1rem;
+        font-weight: 500;
+        width: 70%;
+    }
+
+    #paymentTable td:nth-child(2) {
+        position: absolute;
+        top: 20px;
+    }
+
+    #paymentTable td:nth-child(3) {
+        order: 2;
+        display: flex;
+    }
+
+    #paymentTable td:nth-child(3)::after {
+        content: url('./assets/arrow_forward_iosdropdownArror.svg');
+        width: 1rem;
+        height: 1rem;
+        cursor: pointer;
+    }
+
+    #paymentTable td:nth-child(4) {
+        margin-top: 48px;
+        order: 4;
+        display: none;
+        flex-direction: column;
+    }
+
+    #paymentTable td:nth-child(4).active {
+        display: flex;
+    }
+
+    #paymentTable td:nth-child(4)::before {
+        content: 'Description';
+    }
+}

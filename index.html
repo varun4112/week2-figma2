@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./resources/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- Sidebar -->
+      <div id="sideBar">
+        <div>
+          <div id="Edash">
+            <div id="grainEdash">
+              <img
+                id="grainImg"
+                src="./resources/assets/grain.svg"
+                alt=""
+              />E-Dashboard
+            </div>
+            <img
+              id="openSidebarIcon"
+              src="./resources/assets/menu_open.svg"
+              alt=""
+            />
+            <img
+              id="closedSidebarIcon"
+              src="./resources/assets/Group 1000005387closedISdebar.svg"
+              alt=""
+            />
+          </div>
+
+          <div id="menuList">
+            <div id="clientCompany">
+              <div id="avtar">A</div>
+              <div id="name">Alphalinx inc.</div>
+              <div id="arrowDown">
+                <img src="./resources/assets/expand_more.svg" alt="" />
+              </div>
+            </div>
+
+            <div id="MenuItem">
+              <div id="menuIcon">
+                <img src="./resources/assets/widgets.svg" alt="" />
+              </div>
+              <div id="menuText">Dashboard</div>
+            </div>
+
+            <div id="MenuItem">
+              <div class="dropdown">
+                <button id="dropdown" onclick="myFunction()" class="dropbtn">
+                  <img src="./resources/assets/add_chart.svg" alt="" />My
+                  Business<img
+                    id="dropdownArrow"
+                    src="./resources/assets/arrow_drop_down.svg"
+                    alt=""
+                  />
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Option 1</a>
+                  <a href="#">Option 2</a>
+                  <a href="#">Option 3</a>
+                </div>
+              </div>
+            </div>
+
+            <div id="MenuItem">
+              <div class="dropdown">
+                <button id="dropdown" onclick="myFunction2()" class="dropbtn">
+                  <img
+                    src="./resources/assets/request_quote.svg"
+                    alt=""
+                  />Financial Resources<img
+                    id="dropdownArrow"
+                    src="./resources/assets/arrow_drop_down.svg"
+                    alt=""
+                  />
+                </button>
+                <div id="myDropdown2" class="dropdown-content">
+                  <a href="#">Option 1</a>
+                  <a href="#">Option 2</a>
+                  <a href="#">Option 3</a>
+                </div>
+              </div>
+            </div>
+
+            <div id="MenuItem">
+              <div id="menuIcon">
+                <img src="./resources/assets/unsubscribe.svg" alt="" />
+              </div>
+              <div id="menuText">Mailbox</div>
+            </div>
+
+            <div id="MenuItem">
+              <div id="menuIcon">
+                <img src="./resources/assets/airplane_ticket.svg" alt="" />
+              </div>
+              <div id="menuText">Visa Center</div>
+            </div>
+
+            <div id="MenuItem">
+              <div id="menuIcon">
+                <img src="./resources/assets/request_quote.svg" alt="" />
+              </div>
+              <div id="menuText">Compliance</div>
+              <div id="arrowDown">
+                <img src="./resources/assets/Group 762245.svg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div id="loginLogout">
+            <div id="sidebarBottomOptions">
+              <div id="sidebarBottomItem">
+                <div id="sidebarBottomItemIcon">
+                  <img src="./resources/assets/notifications.svg" alt="" />
+                </div>
+                <div id="sidebarBottomItemText">Notification</div>
+              </div>
+
+              <div id="sidebarBottomItem">
+                <div id="sidebarBottomItemIcon">
+                  <img src="./resources/assets/help.svg" alt="" />
+                </div>
+                <div id="sidebarBottomItemText">help Center</div>
+                <div id="dotMenu">
+                  <img src="./resources/assets/expand_more2.svg" alt="" />
+                </div>
+              </div>
+
+              <div id="userItem">
+                <div id="userAvtar">J</div>
+                <div id="userInfo">
+                  <div id="userName">Jacobe James</div>
+                  <div id="userEmail">Jacobejames@gmail.com</div>
+                </div>
+                <div id="expand">
+                  <img src="./resources/assets/expand_more2.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- sidebarEnd -->
+
+      <!-- dashboard Section -->
+      <div id="Welcome">
+        <div id="goodMorning">
+          <p id="goodMOrningText">
+            Good Morning, <span>Emily!</span
+            ><span id="imgSpan"
+              ><img src="./resources/assets/image 113.svg" alt=""
+            /></span>
+          </p>
+          <p id="welcomeBack">Welcome back!</p>
+        </div>
+
+        <div class="document-status-container">
+          <img
+            src="./resources/assets/Group 764326card-check.svg"
+            alt="Card-Checked"
+            class="card-checked"
+          />
+          <div id="documnetStatusDiv1">
+            <h2>
+              All your <span class="documents-span1">documents</span> are <br />
+              <span class="documents-span2">up to date!</span>
+            </h2>
+            <img id="stars" src="./resources/assets/auto_awesome.svg" alt="" />
+          </div>
+
+          <div class="horizontal-line"></div>
+          <p id="documentStatusPara">
+            You have <span class="documents-span3">3 upcoming</span> document
+            updates in January.
+            <img
+              id="next-button"
+              src="/resources/assets/Group 764410next.svg"
+              class="next-button"
+              alt="next-button Svg"
+            />
+          </p>
+        </div>
+
+        <!-- chart -->
+        <div id="chartContainer">
+          <div id="chartBox">
+            <canvas id="myDoughnutChart"></canvas>
+            <h2 >21</h2>
+            <p>Applications</p>
+          </div>
+          <div id="chartLegend">
+            <ul>
+              <li>
+                <img
+                  id="bullet1"
+                  src="./resources/assets/Ellipse 1202bullet1.svg"
+                  alt=""
+                />Incomplete
+              </li>
+              <li>
+                <img
+                  id="bullet1"
+                  src="./resources/assets/Ellipse 1203bullet2.svg"
+                  alt=""
+                />Pending Approval
+              </li>
+              <li>
+                <img
+                  id="bullet1"
+                  src="./resources/assets/Ellipse 1204bullet3.svg"
+                  alt=""
+                />Approved
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Mailbox -->
+        <div id="mailbox">
+          <div id="mailboxDiv1">
+            <h3 id="mailboHeading">Mailbox</h3>
+            <a href="">View all</a>
+          </div>
+          <p id="mailboxPara">Check on your all your mail in one go.</p>
+          <div id="quickView">
+            <div class="quickViewdDiv1">
+              <img src="./resources/assets/Group 764328newCheck.svg" alt="" />
+              <p class="quickViewp">New</p>
+              <p class="quickView2">23</p>
+            </div>
+
+            <div class="quickViewdDiv2">
+              <img
+                src="./resources/assets/Group 7643293dotsRequested.svg"
+                alt=""
+              />
+              <p class="quickViewp">Requested</p>
+              <p class="quickView2">23</p>
+            </div>
+
+            <div class="quickViewdDiv3">
+              <img src="./resources/assets/Group 764331bell.svg" alt="" />
+              <p class="quickViewp">Action taken</p>
+              <p class="quickView2">23</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Legal Compliance -->
+        <div id="Legal">
+          <div id="LegalDiv1">
+            <h3 id="LegalHeading">Legal Compliance</h3>
+            <a href="">View all</a>
+          </div>
+          <p id="LegalPara">Keep your requirements up to date.</p>
+          <div id="LegalquickView">
+            <div class="LegalquickViewdDiv1">
+              <img src="./resources/assets/Group 764328newCheck.svg" alt="" />
+              <p>Reminder</p>
+              <p class="LegalquickView2">23</p>
+            </div>
+
+            <div class="LegalquickViewdDiv2">
+              <img
+                src="./resources/assets/Group 7643293dotsRequested.svg"
+                alt=""
+              />
+              <p>In progress</p>
+              <p class="LegalquickView2">23</p>
+            </div>
+
+            <div class="LegalquickViewdDiv3">
+              <img src="./resources/assets/Group 764331bell.svg" alt="" />
+              <p>To approve</p>
+              <p class="LegalquickView2">23</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- dashBoard End -->
+
+      <!-- Tasks and Payments -->
+      <div id="taskandPayments">
+        <div id="task">
+          <div id="taskHeadingDiv">
+            <h1 id="taskHeading">Tasks</h1>
+            <a>View All</a>
+          </div>
+          <ul id="taskTabs">
+            <li>My tasks</li>
+            <li>Overview</li>
+            <li>Assigned by me</li>
+          </ul>
+          <div class="h-line"></div>
+
+          <!-- table for Tasks -->
+          <table id="taskTable">
+            <tr id="taskhead">
+              <th>Task</th>
+              <th>Category</th>
+              <th>Due date</th>
+              <th>Status</th>
+            </tr>
+
+            <tr>
+              <td id="tasktd">Update Tax Document for Alphalinx...</td>
+              <td>Compliance</td>
+              <td>23/11/23</td>
+              <td><div id="status">Request Sent</div></td>
+            </tr>
+
+            <tr>
+              <td id="tasktd">Update KYC document</td>
+              <td>Compliance</td>
+              <td>23/11/23</td>
+              <td><div id="status">Request Sent</div></td>
+            </tr>
+
+            <tr>
+              <td id="tasktd">Add clearer photo for visa application</td>
+              <td>Visa center</td>
+              <td>23/11/23</td>
+              <td><div id="status">Pending Action</div></td>
+            </tr>
+
+            <tr>
+              <td id="tasktd">Document not clear: please add new file</td>
+              <td>Visa center</td>
+              <td>23/11/23</td>
+              <td><div id="status">Pending Action</div></td>
+            </tr>
+          </table>
+
+          <!-- table for Payment History -->
+          <div id="TransactionHeadingDiv">
+            <h1 id="transactionHeading">Payment history</h1>
+            <a>View All</a>
+          </div>
+          <table id="paymentTable">
+            <tr id="transactionHeading">
+              <th>Transaction Id</th>
+              <th>Date of Transaction</th>
+              <th>Amount</th>
+              <th>Description</th>
+            </tr>
+
+            <tr>
+              <td>#764657758</td>
+              <td>23/01/19</td>
+              <td class="expand_more">$5.99</td>
+              <td>Mailbox</td>
+            </tr>
+
+            <tr>
+              <td>#764657758</td>
+              <td>22/01/19</td>
+              <td class="expand_more">$99</td>
+              <td>Mailbox</td>
+            </tr>
+
+            <tr>
+              <td>#764657758</td>
+              <td>21/01/19</td>
+              <td class="expand_more">$5.99</td>
+              <td>Registration (upgrade)</td>
+            </tr>
+
+            <tr>
+              <td>#764657758</td>
+              <td>19/01/19</td>
+              <td class="expand_more">$5.99</td>
+              <td>Mailbox</td>
+            </tr>
+
+            <tr>
+              <td>#764657758</td>
+              <td>19/01/19</td>
+              <td class="expand_more">$5.99</td>
+              <td>Mailbox</td>
+            </tr>
+
+            <tr>
+              <td>#764657758</td>
+              <td>23/12/18</td>
+              <td class="expand_more">$5.99</td>
+              <td>Mailbox</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <script src="./resources/index.js"></script>
+  </body>
+</html>
