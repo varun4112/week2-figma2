@@ -15,7 +15,6 @@ main {
 #sideBar {
     background-color: #0F1738;
     width: 293px;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -151,8 +150,6 @@ main {
 
 
 #loginLogout {
-    position: sticky;
-    bottom: 0;
     background-color: #0F1738;
 }
 
@@ -450,8 +447,8 @@ main {
 /* Task and payments */
 
 #taskandPayments {
-    margin: 40px;
-    width: 700px;
+    margin: 20px;
+    width: 550px;
 }
 
 #taskHeadingDiv,
@@ -542,6 +539,13 @@ td {
     width: 190px;
 }
 
+#statusTd {
+    padding: 16px 5px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15.6px;
+    text-align: left;
+}
 
 #tableHLine {
     height: 1px;
