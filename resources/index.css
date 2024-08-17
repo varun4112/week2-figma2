@@ -19,6 +19,19 @@ main {
     flex-direction: column;
 }
 
+#sideBar.active {
+    width: 80px;
+}
+
+#menuList {
+    display: block;
+}
+
+#menuList.active {
+    display: none;
+}
+
+
 #closedSidebarIcon {
     display: none;
 }
@@ -37,6 +50,10 @@ main {
 #grainEdash {
     display: flex;
     align-items: center;
+}
+
+#grainEdash.active {
+    display: none;
 }
 
 #grainImg {
@@ -154,9 +171,11 @@ main {
 
 #sidebarBottomOptions {
     padding: 29px 40px 40px 29px;
-    position: fixed;
-    bottom: 0;
+    background-color: #0F1738;
+}
 
+#sidebarBottomOptions.active{
+    display: none;
 }
 
 #sidebarBottomItem {
@@ -573,6 +592,10 @@ td {
         display: block;
     }
 
+    #closedSidebarIcon.active{
+        display: none;
+    }
+
     #openSidebarIcon {
         display: none;
     }
@@ -591,6 +614,15 @@ td {
 
     #loginLogout {
         display: none;
+    }
+
+
+    #sidebarBottomOptions{
+        display: none;
+    }
+
+    #sidebarBottomOptions.active{
+        display: block;
     }
 
     #Welcome {
