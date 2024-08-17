@@ -89,18 +89,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // SIDEBAR OPEN AND CLOSING
-// document.addEventListener("DOMContentLoaded", function () {
-//   const toggleButton = document.getElementById("closedSidebarIcon");
-
-//   const menuList = document.querySelector("#menuList");
-//   const openSidebarIcon = document.querySelector("#openSidebarIcon");
-
-//   toggleButton.addEventListener("click", () => {
-//     console.log("clicked");
-//     menuList.classList.toggle("active");
-//     openSidebarIcon.toggle("active");
-//   });
-// });
 document.addEventListener("DOMContentLoaded", function () {
   const toggleButton = document.getElementById("closedSidebarIcon");
   const sideBar = document.getElementById("sideBar");
@@ -108,7 +96,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const grainEdash = document.getElementById("grainEdash");
   const menuList = document.getElementById("menuList");
   const sidebarBottomOptions = document.getElementById("sidebarBottomOptions");
-  // const closedSidebarIcon = document.getElementById("closedSidebarIcon");
 
   openSidebarIcon.addEventListener("click", () => {
     console.log("clicked");
@@ -121,9 +108,6 @@ document.addEventListener("DOMContentLoaded", function () {
   toggleButton.addEventListener("click", () => {
     console.log("clicked");
     menuList.classList.toggle("active");
-    // openSidebarIcon.classList.toggle("active"); // Updated this line
     sidebarBottomOptions.classList.toggle("active");
-    // closedSidebarIcon.classList.toggle("active"); // Updated this line
-
   });
 });
